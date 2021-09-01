@@ -3,7 +3,7 @@ import 'package:flutter_weatherapp_with_bloc/models/weather.dart';
 import 'package:meta/meta.dart';
 
 abstract class WeatherState extends Equatable {
-  const WeatherState();
+  // const WeatherState();
 }
 
 class InitialWeatherState extends WeatherState {
@@ -24,8 +24,6 @@ class WeatherLoadedState extends WeatherState {
   @override
   // TODO: implement props
   List<Object> get props => [weather];
-
-
 }
 
 class WeatherErrorState extends WeatherState {
@@ -33,4 +31,3 @@ class WeatherErrorState extends WeatherState {
   // TODO: implement props
   List<Object> get props => [];
 }
-
